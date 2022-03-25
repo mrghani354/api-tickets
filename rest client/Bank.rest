@@ -1,0 +1,18 @@
+GET http://localhost:3000/
+
+### SHOW ALL BANK
+GET http://localhost:3000/api/bank
+
+### SHOW BANK BY ID
+GET http://localhost:3000/api/bank/623c4b93da5ac65e57ee0943
+
+### CREATE NEW BANK ACCOUNT
+POST http://localhost:3000/api/bank
+Content-Type: application/json
+
+{
+    "bank_name": "BCA",
+    "card_type": "debit",
+    "acc_number": "071288282",
+    "userid": "623c4b73da5ac65e57ee0940"
+}

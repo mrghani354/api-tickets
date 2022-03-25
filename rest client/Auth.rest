@@ -1,0 +1,20 @@
+### AUTH SIGN-UP
+POST http://localhost:3000/api/auth/signup
+Content-Type: application/json
+
+{
+    "fullname": "user1",
+    "email": "user1@gmail.com",
+    "password": "Password1",
+    "status": true,
+    "phoneNumber": "081111111111"
+}
+
+### AUTH SIGN-IN
+POST http://localhost:3000/api/auth/signin
+Content-Type: application/json
+
+{
+    "email": "user1@gmail.com",
+    "password": "Password1"
+}

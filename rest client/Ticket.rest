@@ -1,0 +1,29 @@
+GET http://localhost:3000/
+
+### SHOW ALL TICKET
+GET http://localhost:3000/api/ticket
+
+### SHOW TICKET BY ID
+GET http://localhost:3000/api/ticket/623bcc0fbf4f614c320973f0
+
+### CREATE NEW TICKET
+POST http://localhost:3000/api/ticket
+Content-Type: application/json
+
+{
+    "userid": "623c4b73da5ac65e57ee0940",
+    "eventid": "623c4b93da5ac65e57ee0943",
+    "quantity": 3
+}
+
+### UPDATE TICKET BY ID
+PATCH  http://localhost:3000/api/ticket/623c0d7aa236107279185f2b
+Content-Type: application/json
+
+{
+    "name": "MOTO GP INDONESIA",
+    "count": 15
+}
+
+### REMOVE TICKET BY ID
+DELETE  http://localhost:3000/api/ticket/623bcc0fbf4f614c320973f0
