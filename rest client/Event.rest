@@ -13,17 +13,20 @@ Content-Type: application/json
 {
     "name": "MOTO GP",
     "price": 500000,
+    "count": 50,
     "show_date": "03/24/2022"
 }
 
 ### UPDATE EVENT BY ID
-PATCH  http://localhost:3000/api/event/623c4b93da5ac65e57ee0943
+PATCH  http://localhost:3000/api/event/625d6d73cef20272f28a661a
 Content-Type: application/json
 
 {
     "name": "MOTO GP INDONESIA",
-    "count": 15
 }
 
 ### REMOVE EVENT BY ID
 DELETE  http://localhost:3000/api/event/623bcc0fbf4f614c320973f0
+
+### REMOVE ALL EVENT
+DELETE  http://localhost:3000/api/event

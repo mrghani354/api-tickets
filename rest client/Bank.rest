@@ -14,5 +14,5 @@ Content-Type: application/json
     "bank_name": "BCA",
     "card_type": "debit",
     "acc_number": "071288282",
-    "userid": "623c4b73da5ac65e57ee0940"
+    "userid": "625d1c25b4c657450af0eb38"
 }

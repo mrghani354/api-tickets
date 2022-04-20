@@ -87,4 +87,18 @@ module.exports = {
       });
     }
   },
+  deleteAllEvent: async (req, res) => {
+    try {
+      const deleted = await Event.deleteMany({});
+
+      res.status(200).json({
+        success: true,
+        data: deleted,
+      });
+    } catch (error) {
+      res.status(400).json({
+        message: error.message,
+      });
+    }
+  },
 };
